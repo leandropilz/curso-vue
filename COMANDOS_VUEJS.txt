@@ -5,4 +5,11 @@ Comandos vue
 3 - Para rodar o servido executar o comando na pata do projeto = npm run serve
 4 - Para reinstalar a pasta nodemodels usar o comando = npm i
 
-
+ADICIONAR PLUGINS:
+Curso projeto-plugins:
+   ELECTRON:
+   -- vue add electron-builder  //Serve para criar aplicação Desktop;
+      -->Rodar o electron = npm run electron:serve
+   VUETIFY:
+   -- vue add vuetify //Adiciona componentes default baseados em material design;
+   
