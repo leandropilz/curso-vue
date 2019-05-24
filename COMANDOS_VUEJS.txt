@@ -1,0 +1,8 @@
+
+Comandos vue
+1 - Instalr o VueCli na pasta = npm install -g @vue/cli
+2 - Criar projeto = vue create projeto-simples
+3 - Para rodar o servido executar o comando na pata do projeto = npm run serve
+4 - Para reinstalar a pasta nodemodels usar o comando = npm i
+
+
