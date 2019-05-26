@@ -6,20 +6,22 @@
       Nome é
       <strong>{{ nome }}</strong>
     </p>
-    <p>Idade é <strong>{{ idade }}</strong></p>
+    <p>
+      Idade é
+      <strong>{{ idade }}</strong>
+    </p>
     <button @click="alterarNome">Alterar Nome</button>
     <hr>
     <div class="componentes">
-      <app-usuario-info 
-            :nome="nome" 
-            :idade="idade" 
-            @nomeMudou="nome = $event" 
-            :reiniciarFn="reiniciarNome"/>
+      <app-usuario-info
+        :nome="nome"
+        :idade="idade"
+        @nomeMudou="nome = $event"
+        :reiniciarFn="reiniciarNome"
+      />
       <!-- @nomeMudou é um evento personalizado. -->
       <!-- :reiniciarFn recebe uma função callback e envia para o filho -->
-      <app-usuario-editar 
-            :idade="idade"
-            @idadeMudou="idade = $event"/>
+      <app-usuario-editar :idade="idade"/>
     </div>
   </div>
 </template>
