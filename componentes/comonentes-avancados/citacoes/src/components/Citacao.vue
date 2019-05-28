@@ -8,7 +8,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  //Ciclos de vida
+  created() {},
+  activated() {},
+  desactivated() {},
+  destroyed() {}
+};
 </script>
 
 <style scoped>
