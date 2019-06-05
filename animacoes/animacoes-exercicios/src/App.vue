@@ -8,7 +8,8 @@
       <b-alert variant="info" show v-if="exibir">{{ msg }}</b-alert>
     </transition>
 
-    <!-- Caso ocorra problema por diferentes tempos o atributo type determina quem deve respeitar. -->
+    <!-- Caso ocorra problema por diferentes tempos o atributo type determina quem deve respeitar.
+	     ao inves de usar o v-if pode ser usado o v-show-->
     <transition name="slide" type="animation">
       <b-alert variant="info" show v-if="exibir">{{ msg }}</b-alert>
     </transition>
@@ -80,7 +81,7 @@ export default {
 
 .slide-leave-active {
   animation: slide-out 2s ease;
-  transition: opacity 6s;
+  transition: opacity 2s;
 }
 
 .slide-enter,
