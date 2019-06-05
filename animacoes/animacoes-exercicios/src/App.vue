@@ -33,21 +33,18 @@ export default {
 }
 
 /* Se não configurar nome o padrão sempre será *-enter, *-enter-active */
-.fade-enter {
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
-.fade-enter-active {
+.fade-enter-active, .fade-leave.active {
+  transition: opacity 2s;
 }
 
-.fade-enter-to {
-}
+/* Não é necessário configurar neste contexto. */
+/* .fade-enter-to {
+} */
 
-.fade-leave {
-}
-
-.fade-leave.active {
-}
-
-.fade-leave-to {
-}
+/* .fade-leave {
+} */
 </style>
