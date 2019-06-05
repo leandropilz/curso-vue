@@ -4,7 +4,7 @@
     <hr>
     <b-button variant="primary" class="mb-4" @click="exibir = !exibir">Mostrar Mensagem</b-button>
 
-    <transition>
+    <transition name="fade">
       <b-alert variant="info" show v-if="exibir">{{ msg }}</b-alert>
     </transition>
   </div>
@@ -30,5 +30,24 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   font-size: 1.5rem;
+}
+
+/* Se não configurar nome o padrão sempre será *-enter, *-enter-active */
+.fade-enter {
+}
+
+.fade-enter-active {
+}
+
+.fade-enter-to {
+}
+
+.fade-leave {
+}
+
+.fade-leave.active {
+}
+
+.fade-leave-to {
 }
 </style>
