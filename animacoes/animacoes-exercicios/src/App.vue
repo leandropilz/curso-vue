@@ -4,13 +4,15 @@
     <hr>
     <b-button variant="primary" class="mb-4" @click="exibir = !exibir">Mostrar Mensagem</b-button>
 
-    <transition name="fade">
+    <transition name="fade" appear>
       <b-alert variant="info" show v-if="exibir">{{ msg }}</b-alert>
     </transition>
 
     <!-- Caso ocorra problema por diferentes tempos o atributo type determina quem deve respeitar.
-	     ao inves de usar o v-if pode ser usado o v-show-->
-    <transition name="slide" type="animation">
+	     ao inves de usar o v-if pode ser usado o v-show  
+		 o aributo appear, faz com que explicitamente a transição ocorra ao carregar a página,
+		 caso o o atributo exibir esteja = true incial ele faz a transição. -->
+    <transition name="slide" type="animation" appear>
       <b-alert variant="info" show v-if="exibir">{{ msg }}</b-alert>
     </transition>
   </div>
