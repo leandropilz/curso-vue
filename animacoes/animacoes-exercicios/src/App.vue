@@ -11,8 +11,13 @@
     <!-- Caso ocorra problema por diferentes tempos o atributo type determina quem deve respeitar.
 	     ao inves de usar o v-if pode ser usado o v-show  
 		 o aributo appear, faz com que explicitamente a transição ocorra ao carregar a página,
-		 caso o o atributo exibir esteja = true incial ele faz a transição. -->
+    caso o o atributo exibir esteja = true incial ele faz a transição.-->
     <transition name="slide" type="animation" appear>
+      <b-alert variant="info" show v-if="exibir">{{ msg }}</b-alert>
+    </transition>
+
+    <!-- Utilizando o animate.css/3.7.0/animate.min.css em index.html(public). -->
+    <transition enter-active-class="animated bounce" leave-active-class="animated shake">
       <b-alert variant="info" show v-if="exibir">{{ msg }}</b-alert>
     </transition>
   </div>
