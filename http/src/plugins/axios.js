@@ -7,6 +7,13 @@ Vue.use({
     install(Vue) {
         Vue.prototype.$http = axios
 
+        //Utilizado para interceptar as requisições.
+        Vue.prototype.$http.interceptors.request.use(config => {
+            // console.log(config.method)
+            return config
+        })
+
+
         // Pode-se criar instancias do axios conforme o exemplo abaixo
         // Vue.prototype.$http = axios.create({
         //     baseURL = 'https://curso-vue-9db5c.firebaseio.com/'
