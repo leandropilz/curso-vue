@@ -52,6 +52,9 @@ export default {
       this.$http.get("usuarios.json").then(resp => {
         this.usuarios = resp.data;
       });
+
+      //Pode-se carregar token para o header de forma posterior(dinâmica), exemplo pós login recendo o token.
+      this.$http.defaults.headers.common["Authorization"] = "abc123";
     }
   }
 
