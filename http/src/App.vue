@@ -5,12 +5,12 @@
       <b-form-group label="Nome:">
         <b-form-input type="text" size="lg" v-model="usuario.nome" placeholder="Informe o Nome"></b-form-input>
       </b-form-group>
-	        <b-form-group label="E-mail:">
+      <b-form-group label="E-mail:">
         <b-form-input type="email" size="lg" v-model="usuario.email" placeholder="Informe o E-mail"></b-form-input>
       </b-form-group>
-	  <hr>
-	  <!-- @click.preven não faz submit no formulário. -->
-	  <b-button @click="salvar" size="lg" variant="primary">Salvar</b-button>
+      <hr>
+      <!-- @click.preven não faz submit no formulário. -->
+      <b-button @click="salvar" size="lg" variant="primary">Salvar</b-button>
     </b-card>
   </div>
 </template>
@@ -25,10 +25,13 @@ export default {
       }
     };
   },
-  methods :{
-	  salvar(){
-		  console.log(this.usuario)
-	  }
+  methods: {
+    salvar() {
+      this.$http.post("usuarios.json", this.usuario).then(resp => {
+		  this.usuario.nome = ''
+		  this.usuario.email = ''
+	  });
+    }
   }
 
   //   created() {
