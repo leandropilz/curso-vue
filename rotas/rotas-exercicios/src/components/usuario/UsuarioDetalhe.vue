@@ -1,7 +1,6 @@
 <template>
   <div class="usuario-detalhoe">
     <h3>Usuário Detalhe</h3>
-    <hr>
     <p>
       <strong>Código:</strong>
       {{ id }}
