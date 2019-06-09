@@ -2,15 +2,20 @@
   <div id="app">
     <h1>Rotas com VueRouter</h1>
     <router-view name="menu"/>
-    <router-view/>
+    <!-- animação importada em public index o /animate.css/ -->
+    <transition
+      mode="out-in"
+      enter-active-class="animated rubberBand"
+      leave-active-class="animated rollOut"
+    >
+      <router-view/>
+    </transition>
     <router-view name="menuInferior"/>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
