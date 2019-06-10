@@ -1,4 +1,5 @@
 export default {
+    namespaced: true,
     state: {
         produtos: []
     },
@@ -18,4 +19,9 @@ export default {
             commit('adicionarProduto', payload)
         }
     }
+    // actions: {
+    //     adicionarProduto({ commit }, payload) {
+    //         commit('adicionarProduto', payload)
+    //     }
+    // }
 }

@@ -33,7 +33,8 @@ import { mapGetters } from "vuex";
 
 export default {
   computed: {
-    ...mapGetters({
+    //passar namespaced = carrinho
+    ...mapGetters("carrinho", {
       total: "valorTotal"
     }),
     produtos() {

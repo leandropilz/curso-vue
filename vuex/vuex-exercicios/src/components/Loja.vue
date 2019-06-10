@@ -31,7 +31,8 @@ export default {
     }
   },
   methods: {
-    ...mapActions(["adicionarProduto"]),
+    //passar namespaced = carrinho
+    ...mapActions("carrinho", ["adicionarProduto"]),
     adicionar() {
       const produto = {
         id: this.sequencia,
