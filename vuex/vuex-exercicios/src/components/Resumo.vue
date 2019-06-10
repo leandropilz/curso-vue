@@ -12,15 +12,20 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
-  computed: {
-    total() {
-      return this.$store.getters.valorTotal;
-    },
-    produtos() {
-      return this.$store.state.produtos;
-    }
-  }
+  //Exemplo usando mapGetters
+  computed: mapGetters({
+    total: "valorTotal"
+  })
+
+  //Exemplo inicial sem usar mapGetters
+  // computed: {
+  //   total() {
+  //     return this.$store.getters.valorTotal;
+  //   }
+  // }
 };
 </script>
 
