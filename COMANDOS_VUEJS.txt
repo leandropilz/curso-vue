@@ -12,4 +12,7 @@ Curso projeto-plugins:
       -->Rodar o electron = npm run electron:serve
    VUETIFY:
    -- vue add vuetify //Adiciona componentes default baseados em material design;
+
+   VUE ROUTER:
+   npm i --save vue-router
    
