@@ -15,4 +15,7 @@ Curso projeto-plugins:
 
    VUE ROUTER:
    npm i --save vue-router
+
+   VUEX
+   npm i --save vuex
    

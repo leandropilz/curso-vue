@@ -12,12 +12,13 @@
     "ajv-keywords": "^3.4.0",
     "vue": "^2.5.21",
     "vue-router": "^3.0.6",
-    "vuetify": "^1.3.0"
+    "vuetify": "^1.3.0",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
     "@vue/cli-plugin-eslint": "^3.3.0",
-    "@vue/cli-service": "^3.3.0",
+    "@vue/cli-service": "^3.8.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
