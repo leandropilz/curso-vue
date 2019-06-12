@@ -4,7 +4,7 @@
       <v-card-title class="headline">
         <strong>
           {{ stock.name }}
-          <small>(Preço: {{ stock.price }} | Qtd: {{ stock.quantity }})</small>
+          <small>(Preço: {{ stock.price | currency}} | Qtd: {{ stock.quantity }})</small>
         </strong>
       </v-card-title>
     </v-card>
